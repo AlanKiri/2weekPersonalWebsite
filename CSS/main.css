@@ -1,0 +1,106 @@
+.container {
+    background: #ff0000;
+    animation-name: rainbowBackground;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;     
+}
+
+@keyframes rainbowBackground {
+    0% {background-color: #ff0000}
+    12.5% {background-color: #ffa500}
+    25% {background-color: #ffff00}
+    37.5% {background-color: #008000}
+    50% {background-color: #0000ff}
+    62.5% {background-color: #4b0082}
+    75% {background-color: #ee82ee}
+    87.5% {background-color: #9999FF}
+    100% {background-color: #ff0000}
+
+}
+@keyframes rainbowText {
+    0% {color: #ff0000}
+    12.5% {color: #ffa500}
+    25% {color: #ffff00}
+    37.5% {color: #008000}
+    50% {color: #0000ff}
+    62.5% {color: #4b0082}
+    75% {color: #ee82ee}
+    87.5% {color: #9999FF}
+    100% {color: #ff0000}
+
+}
+
+@keyframes makeSmall {
+    from {width:50%;height:90%}
+    to {width:40%; height:70%}
+
+}
+@keyframes makeBig {
+    from {width:40%;height:70%}
+    to {width:50%;height:90%; border-radius: 40px;}
+    
+
+}
+
+.center-div  {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#textContainer {
+    background-color: white;
+    border-radius: 40px;
+    animation-name: makeBig;
+    animation-duration: 1s; 
+    width: 50%;
+    height: 90%;
+    text-align: center;
+}
+
+#textContainer:hover {
+    animation-name: makeSmall;
+    animation-duration: 1s; 
+    width: 40%;
+    height: 70%;
+
+}
+
+
+h1  {
+    text-align: center;
+    font-size: 4vw;
+    font-family: sans-serif;
+
+    
+}
+
+
+.rainbow-text {
+ 
+    animation-name: rainbowText;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; 
+}
+
+#learnMore {
+    height: 30px;
+    width: 20%;
+    border:none;
+    border-radius: 20px;
+    background-color: black;
+    
+    animation-name: rainbowText;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; 
+}
+
+#learnMore:hover {
+    animation-name: rainbowBackground;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; 
+}
+
