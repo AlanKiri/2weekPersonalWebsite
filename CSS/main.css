@@ -86,7 +86,7 @@ h1  {
     animation-iteration-count: infinite; 
 }
 
-#learnMore {
+.rainbowButton {
     height: 30px;
     width: 20%;
     border:none;
@@ -98,7 +98,7 @@ h1  {
     animation-iteration-count: infinite; 
 }
 
-#learnMore:hover {
+.rainbowButton:hover {
     animation-name: rainbowBackground;
     animation-duration: 10s;
     animation-iteration-count: infinite; 
